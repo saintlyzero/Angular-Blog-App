@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span routerLink="/blog">ng-blog</span>
+    <span class="spacer"></span>
+    <div *ngIf="auth.afAuth.authState | async as user; else showLogin">
+            <span>Hello {{user.displayName}}</span>
+            <button mat-raised-button color="accent" 
+            routerLink="/dashboard">New Post</button>
+            <button mat-button (click)="auth.logout()">Logout</button>
+    </div>
+    <ng-template #showLogin>
+            <button mat-button (click)="auth.login()">Login with Google</button>  
+    </ng-template>
+  </mat-toolbar-row>
+</mat-toolbar>
