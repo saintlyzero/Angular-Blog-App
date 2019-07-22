@@ -1,7 +1,7 @@
-<<<<<<< HEAD
 # Angular-Blog-App
-Blogging app developed Angular 8 and Firebase
-=======
+Blogging app developed using Angular 8, Angular Materialize and Firebase
+
+
 # NgBlog
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
